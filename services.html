@@ -1,280 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GIS CO. LTD – Services</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | GIS CO. LTD</title>
+    <!-- fonts & css (unchanged) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- small logo style (same as index/about) -->
+    <style>
+        .logo-text { font-size: 1.8rem; font-weight: 700; color: var(--gold, #c8a645); line-height: 1.2; }
+        .logo-text span { color: #fff; font-weight: 400; font-size: 1.2rem; display: block; }
+        @media (min-width: 768px) { .logo-text span { display: inline; margin-left: 0.5rem; } }
+        /* ensure card lists look tidy */
+        .service-content ul { margin: 1rem 0; padding-left: 1.2rem; }
+        .service-content li { margin-bottom: 0.3rem; }
+    </style>
 </head>
 <body>
-  <header id="header">
-    <div class="container nav-container">
-    <div class="logo">
+    <!-- Header & Navigation (GIS CO. LTD) -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
   <a href="index.html">
-    <img src="assets/aroadlogo.jpg" alt="GIS CO. LTD Logo">
+    <img src="images/logo.png" alt="GIS CO. LTD Logo">
   </a>
 </div>
-      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li class="dropdown">
-          <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="#general-construction">General Construction</a>
-            <a href="#real-estate">Real Estate</a>
-            <a href="#road-bridge">Road & Bridge</a>
-            <a href="#gold-mining">Gold Mining</a>
-            <a href="#agriculture">Agriculture</a>
-            <a href="#medical-equipment">Medical Equipment</a>
-            <a href="#safety-materials">Safety Materials</a>
-            <a href="#import-export">Import & Export</a>
-            <a href="#petroleum-supply">Petroleum Supply</a>
-            <a href="#solar-installation">Solar Installation</a>
-            <a href="#heavy-equipment">Heavy Equipment Hire</a>
-          </div>
-        </li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="services.html" class="active">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="services.html#construction">General Construction</a></li>
+                            <li><a href="services.html#realestate">Real Estate</a></li>
+                            <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                            <li><a href="services.html#mining">Gold Mining</a></li>
+                            <li><a href="services.html#agriculture">Agriculture & Livestock</a></li>
+                            <li><a href="services.html#medical">Medical Equipment</a></li>
+                            <li><a href="services.html#safety">Safety Materials (PPE)</a></li>
+                            <li><a href="services.html#additional">Additional Business</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header (unsplash: diverse services) -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1581094794325-c8119a89af2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Services</h1>
+            <p>We integrate diverse expertise — you benefit from seamless solutions</p>
+        </div>
+    </section>
+
+    <!-- Services Overview (8 cards, matching GIS profile) -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Expertise</h2>
+                <p>Delivering excellence across every sector</p>
+            </div>
+            <div class="services-grid">
+                <!-- 1. General Construction -->
+                <div class="service-card" id="construction">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="General Construction">
+                    </div>
+                    <div class="service-content">
+                        <h3>General Construction</h3>
+                        <p>Residential & commercial buildings, petrol stations, site clearing, hill leveling, and construction material supply.</p>
+                        <ul>
+                            <li>Turnkey construction</li>
+                            <li>Modern machinery fleet</li>
+                            <li>Rural & urban projects</li>
+                            <li>Durable infrastructure</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Inquire Now</a>
+                    </div>
+                </div>
+                <!-- 2. Real Estate -->
+                <div class="service-card" id="realestate">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Real Estate">
+                    </div>
+                    <div class="service-content">
+                        <h3>Real Estate</h3>
+                        <p>Property development, residential & commercial projects, land development, sales & leasing, property management.</p>
+                        <ul>
+                            <li>On-time, within budget</li>
+                            <li>Client specification focus</li>
+                            <li>Full project lifecycle</li>
+                            <li>Investment consulting</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Explore Properties</a>
+                    </div>
+                </div>
+                <!-- 3. Road & Bridge Construction -->
+                <div class="service-card" id="roadbridge">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Road & Bridge">
+                    </div>
+                    <div class="service-content">
+                        <h3>Road & Bridge</h3>
+                        <p>Gravel haulage, reshaping, spreading, compaction, drainage systems, and bridge construction.</p>
+                        <ul>
+                            <li>Cost-effective solutions</li>
+                            <li>Heavy compaction equipment</li>
+                            <li>Durable drainage design</li>
+                            <li>Rural access improvement</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Plan Infrastructure</a>
+                    </div>
+                </div>
+                <!-- 4. Gold Mining -->
+                <div class="service-card" id="mining">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gold Mining">
+                    </div>
+                    <div class="service-content">
+                        <h3>Gold Mining</h3>
+                        <p>Open pit & underground mine design, feasibility studies, extraction strategy, mine scheduling and optimization.</p>
+                        <ul>
+                            <li>Modern mine planning software</li>
+                            <li>Risk-managed solutions</li>
+                            <li>From concept to definitive</li>
+                            <li>Experienced geologists</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Discuss Mining</a>
+                    </div>
+                </div>
+                <!-- 5. Agriculture & Livestock -->
+                <div class="service-card" id="agriculture">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb673f3d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Agriculture">
+                    </div>
+                    <div class="service-content">
+                        <h3>Agriculture & Livestock</h3>
+                        <p>Tractors, water pumps, farming equipment; supply of maize, sorghum, fruits, coffee, tea, and more.</p>
+                        <ul>
+                            <li>Equipment supply & maintenance</li>
+                            <li>Crop distribution</li>
+                            <li>Livestock support</li>
+                            <li>Irrigation solutions</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Source Equipment</a>
+                    </div>
+                </div>
+                <!-- 6. Medical Equipment Supply -->
+                <div class="service-card" id="medical">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Medical Equipment">
+                    </div>
+                    <div class="service-content">
+                        <h3>Medical Equipment Supply</h3>
+                        <p>Importation & distribution of medical equipment, healthcare products, partnerships with international manufacturers.</p>
+                        <ul>
+                            <li>High-quality & affordable</li>
+                            <li>Reliable global partners</li>
+                            <li>Nationwide distribution</li>
+                            <li>Consumables & durable devices</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Request Products</a>
+                    </div>
+                </div>
+                <!-- 7. Safety Materials & PPE Supply -->
+                <div class="service-card" id="safety">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Safety PPE">
+                    </div>
+                    <div class="service-content">
+                        <h3>Safety Materials & PPE</h3>
+                        <p>PPE, industrial safety gear, workplace safety solutions for construction, oil & gas, healthcare, logistics.</p>
+                        <ul>
+                            <li>Compliance & reliability</li>
+                            <li>Full body protection</li>
+                            <li>Innovative safety products</li>
+                            <li>Bulk supply available</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Order PPE</a>
+                    </div>
+                </div>
+                <!-- 8. Additional Business Areas (combined) -->
+                <div class="service-card" id="additional">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Additional Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Additional Business</h3>
+                        <p>Import & export, petroleum products, solar installation, electrical & plumbing, prefab structures, heavy equipment hire, interior/exterior design, stationery, relief supplies, cryogenic liquids.</p>
+                        <ul>
+                            <li>Diverse supply capabilities</li>
+                            <li>Custom solutions</li>
+                            <li>Emergency relief support</li>
+                            <li>Equipment rental</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Ask for Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose GIS (replacing "Why Choose Us" with company strengths) -->
+    <section class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose GIS CO. LTD</h2>
+                <p>Your trusted partner in every sector</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We combine local expertise with international standards to deliver efficient, cost‑effective, and sustainable solutions. Our strengths include:</p>
+                    <ul style="list-style: none; margin-top: 1rem;">
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Experienced engineers & technical team</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Modern equipment and machinery</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Strong project management</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Competitive pricing</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> On‑time project delivery</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Nationwide operational capacity</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem;">We are dedicated to contributing to the transformation of South Sudan through reliable infrastructure, innovative engineering, and sustainable business practices.</p>
+                </div>
+                <div class="about-image">
+                    <!-- unsplash: modern construction equipment -->
+                    <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern machinery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (integrate message) -->
+    <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1541976590-713941f6819d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,28,45,0.85);"></div>
+        <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto; text-align: center; color: white; padding: 3rem 1rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">We integrate, you benefit.</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">From concept to completion — one partner, full accountability.</p>
+            <a href="contact.html" class="btn" style="background: var(--gold); color: var(--charcoal); padding: 1rem 3rem; font-weight: 600;">Start your project</a>
+        </div>
+    </section>
+
+    <!-- Footer (GIS CO. LTD details) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GIS <span style="color: var(--gold);">CO. LTD</span></h3>
+                    <p>“We Integrate, You Benefit.” — Engineering, construction, trading and technical services across South Sudan.</p>
+                    <!-- no official social links in profile; optional to keep clean -->
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Core Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#construction">General Construction</a></li>
+                        <li><a href="services.html#realestate">Real Estate</a></li>
+                        <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                        <li><a href="services.html#mining">Gold Mining</a></li>
+                        <li><a href="services.html#medical">Medical Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28, Next to Former KCB, Munuki Hai Kuwait, Bilpam Road, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 913 131 604  |  +211 927 769 604  |  +211 982 103 081</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@giscompanyltd.com">info@giscompanyltd.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00am - 5:00pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle (optional) -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
     </div>
-  </header>
 
-  <div class="page-header" style="background: linear-gradient(rgba(44,44,44,0.6), rgba(44,44,44,0.6)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070') center/cover no-repeat;">
-    <div class="container"><h1>Our Services</h1></div>
-  </div>
-
-  <section class="section-padding">
-    <div class="container">
-      <div class="services-grid">
-        <!-- General Construction -->
-        <div class="service-card" id="general-construction">
-          <div class="service-img" style="background-image: url('assets/aroader.jpg');"></div>
-          <div class="service-info">
-            <h3>General Construction</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Residential and Commercial Buildings</li>
-              <li><i class="fas fa-chevron-right"></i> Petrol Stations</li>
-              <li><i class="fas fa-chevron-right"></i> Tarmac and Marram Roads</li>
-              <li><i class="fas fa-chevron-right"></i> Bridges and Flyovers</li>
-              <li><i class="fas fa-chevron-right"></i> Site Clearing and Hill Leveling</li>
-              <li><i class="fas fa-chevron-right"></i> Supply of Construction Materials</li>
-            </ul>
-            <p class="service-desc">With modern machinery and experienced engineers, we construct durable infrastructure designed to last for generations — even in challenging rural or hilly environments.</p>
-          </div>
-        </div>
-        <!-- Real Estate -->
-        <div class="service-card" id="real-estate">
-          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073');"></div>
-          <div class="service-info">
-            <h3>Real Estate</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Luxury Housing</li>
-              <li><i class="fas fa-chevron-right"></i> Commercial Complexes</li>
-              <li><i class="fas fa-chevron-right"></i> Urban Planning</li>
-            </ul>
-            <p class="service-desc">Developing premium properties that combine aesthetics with functionality, creating value for investors and communities alike.</p>
-          </div>
-        </div>
-        <!-- Road & Bridge Construction -->
-        <div class="service-card" id="road-bridge">
-          <div class="service-img" style="background-image: url('assets/aroadhigh.jpg');"></div>
-          <div class="service-info">
-            <h3>Road & Bridge Construction</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Highways and Expressways</li>
-              <li><i class="fas fa-chevron-right"></i> Bridges and Flyovers</li>
-              <li><i class="fas fa-chevron-right"></i> Earthworks and Drainage</li>
-            </ul>
-            <p class="service-desc">State-of-the-art equipment for heavy civil engineering projects, ensuring connectivity and safety.</p>
-          </div>
-        </div>
-        <!-- Gold Mining -->
-        <div class="service-card" id="gold-mining">
-          <div class="service-img" style="background-image: url('assets/aroade.jpg');"></div>
-          <div class="service-info">
-            <h3>Gold Mining</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Exploration and Geology</li>
-              <li><i class="fas fa-chevron-right"></i> Extraction and Processing</li>
-              <li><i class="fas fa-chevron-right"></i> Environmental Rehabilitation</li>
-            </ul>
-            <p class="service-desc">Responsible mining practices with maximum yield, respecting local communities and ecosystems.</p>
-          </div>
-        </div>
-        <!-- Agriculture & Livestock -->
-        <div class="service-card" id="agriculture">
-          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?q=80&w=2070');"></div>
-          <div class="service-info">
-            <h3>Agriculture & Livestock</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Commercial Farming</li>
-              <li><i class="fas fa-chevron-right"></i> Livestock Breeding</li>
-              <li><i class="fas fa-chevron-right"></i> Agri-Supply Chain</li>
-            </ul>
-            <p class="service-desc">Modern techniques to ensure food security and export quality, from farm to market.</p>
-          </div>
-        </div>
-        <!-- Medical Equipment Supply -->
-        <div class="service-card" id="medical-equipment">
-          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=2070');"></div>
-          <div class="service-info">
-            <h3>Medical Equipment Supply</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Diagnostic Devices</li>
-              <li><i class="fas fa-chevron-right"></i> Surgical Instruments</li>
-              <li><i class="fas fa-chevron-right"></i> Hospital Furniture</li>
-            </ul>
-            <p class="service-desc">Partnerships with global manufacturers for reliable medical technology, serving clinics and hospitals.</p>
-          </div>
-        </div>
-        <!-- Safety Materials & PPE -->
-        <div class="service-card" id="safety-materials">
-          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070');"></div>
-          <div class="service-info">
-            <h3>Safety Materials & PPE</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Protective Gear (helmets, gloves, boots)</li>
-              <li><i class="fas fa-chevron-right"></i> Workwear and High-Visibility Clothing</li>
-              <li><i class="fas fa-chevron-right"></i> Site Safety Equipment</li>
-            </ul>
-            <p class="service-desc">Comprehensive safety solutions for industrial workplaces, ensuring compliance and protection.</p>
-          </div>
-        </div>
-        <!-- Import & Export -->
-        <div class="service-card" id="import-export">
-          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070');"></div>
-          <div class="service-info">
-            <h3>Import & Export</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Commodities and Raw Materials</li>
-              <li><i class="fas fa-chevron-right"></i> Machinery and Equipment</li>
-              <li><i class="fas fa-chevron-right"></i> Consumer Goods</li>
-            </ul>
-            <p class="service-desc">Efficient logistics and trade networks across East Africa, handling customs and freight.</p>
-          </div>
-        </div>
-        <!-- Petroleum Supply -->
-        <div class="service-card" id="petroleum-supply">
-          <div class="service-img" style="background-image: url('assets/aroadpet.jpg');"></div>
-          <div class="service-info">
-            <h3>Petroleum Supply</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Fuel Distribution (diesel, petrol)</li>
-              <li><i class="fas fa-chevron-right"></i> Lubricants and Oils</li>
-              <li><i class="fas fa-chevron-right"></i> Storage Solutions</li>
-            </ul>
-            <p class="service-desc">Reliable downstream petroleum services for industrial and commercial clients.</p>
-          </div>
-        </div>
-        <!-- Solar Installation -->
-        <div class="service-card" id="solar-installation">
-          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072');"></div>
-          <div class="service-info">
-            <h3>Solar Installation</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Off-Grid Systems</li>
-              <li><i class="fas fa-chevron-right"></i> Commercial Solar Farms</li>
-              <li><i class="fas fa-chevron-right"></i> Maintenance and Monitoring</li>
-            </ul>
-            <p class="service-desc">Renewable energy expertise to power the future, reducing carbon footprint.</p>
-          </div>
-        </div>
-        <!-- Heavy Equipment Hire -->
-        <div class="service-card" id="heavy-equipment">
-          <div class="service-img" style="background-image: url('assets/aroadheavy.jpg');"></div>
-          <div class="service-info">
-            <h3>Heavy Equipment Hire</h3>
-            <ul class="service-bullets">
-              <li><i class="fas fa-chevron-right"></i> Excavators and Loaders</li>
-              <li><i class="fas fa-chevron-right"></i> Graders and Dozers</li>
-              <li><i class="fas fa-chevron-right"></i> Cranes and Trucks</li>
-            </ul>
-            <p class="service-desc">Well-maintained fleet with experienced operators, available for short or long-term projects.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Need a Custom Solution?</h2>
-      <p>Contact us for tailored services.</p>
-      <a href="contact.html" class="btn btn-gold">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer>
-  <div class="footer-grid">
-    
-    <!-- Company Info -->
-    <div class="footer-col">
-      <h4>GIS CO. LTD</h4>
-      <p>General Integrate Services Company Ltd is committed to engineering excellence and delivering innovative, reliable, and sustainable solutions across South Sudan.</p>
-      <p><strong>"We Integrate, You Benefit."</strong></p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="services.html#general-construction">General Construction</a></li>
-        <li><a href="services.html#road-bridge">Road & Bridge Construction</a></li>
-        <li><a href="services.html#gold-mining">Gold Mining</a></li>
-        <li><a href="services.html#medical-equipment">Medical Equipment Supply</a></li>
-        <li><a href="services.html#solar-installation">Solar Installation</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-col">
-      <h4>Contact Information</h4>
-      <ul class="contact-info">
-        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28<br>
-            Hai Kuwait, Bilpam Road<br>
-            Juba, South Sudan</li>
-
-        <li><i class="fas fa-phone-alt"></i> +211 913 131 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 927 769 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 982 103 081</li>
-
-        <li><i class="fas fa-envelope"></i> 
-          <a href="mailto:giscompanyltd.com">info@giscompanyltd.com</a>
-        </li>
-      </ul>
-
-      <!-- Social Icons -->
-      <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom Copyright -->
-  <div class="copyright">
-    © 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved. | We Integrate, You Benefit.
-  </div>
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
