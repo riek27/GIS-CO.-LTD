@@ -1,175 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GIS CO. LTD – About Us</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | GIS CO. LTD</title>
+    <!-- same fonts & css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- tiny style for text logo (same as index) -->
+    <style>
+        .logo-text { font-size: 1.8rem; font-weight: 700; color: var(--gold, #c8a645); line-height: 1.2; }
+        .logo-text span { color: #fff; font-weight: 400; font-size: 1.2rem; display: block; }
+        @media (min-width: 768px) { .logo-text span { display: inline; margin-left: 0.5rem; } }
+    </style>
 </head>
 <body>
-  <header id="header">
-    <div class="container nav-container">
-      <div class="logo">
-  <a href="index.html">
-    <img src="assets/aroadlogo.jpg" alt="GIS CO. LTD Logo">
-  </a>
-</div>
-      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link active">About</a></li>
-        <li class="dropdown">
-          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="services.html#general-construction">General Construction</a>
-            <a href="services.html#real-estate">Real Estate</a>
-            <a href="services.html#road-bridge">Road & Bridge</a>
-            <a href="services.html#gold-mining">Gold Mining</a>
-            <a href="services.html#agriculture">Agriculture</a>
-            <a href="services.html#medical-equipment">Medical Equipment</a>
-            <a href="services.html#safety-materials">Safety Materials</a>
-            <a href="services.html#import-export">Import & Export</a>
-            <a href="services.html#petroleum-supply">Petroleum Supply</a>
-            <a href="services.html#solar-installation">Solar Installation</a>
-            <a href="services.html#heavy-equipment">Heavy Equipment Hire</a>
-          </div>
-        </li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Page Header with half background -->
-  <div class="page-header" style="background: linear-gradient(rgba(44,44,44,0.6), rgba(44,44,44,0.6)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070') center/cover no-repeat;">
-    <div class="container"><h1>About Us</h1></div>
-  </div>
-
-  <!-- History with team image -->
-  <section class="section-padding">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>Our History</h2>
-          <p>Founded in Juba, GIS CO. LTD has grown from a small construction team into a multi‑disciplinary engineering powerhouse. For over a decade, we have delivered critical infrastructure, mining developments, and industrial solutions across South Sudan and East Africa. Our journey is built on a foundation of integrity, innovation, and an unwavering commitment to quality.</p>
+    <!-- Header & Navigation (GIS CO. LTD) -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <!-- text logo, no asset needed -->
+                <div class="logo-text">GIS<span>CO. LTD</span></div>
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li>
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="services.html#construction">General Construction</a></li>
+                            <li><a href="services.html#realestate">Real Estate</a></li>
+                            <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                            <li><a href="services.html#mining">Gold Mining</a></li>
+                            <li><a href="services.html#agriculture">Agriculture & Livestock</a></li>
+                            <li><a href="services.html#medical">Medical Equipment</a></li>
+                            <li><a href="services.html#safety">Safety Materials (PPE)</a></li>
+                            <li><a href="services.html#importexport">Import & Export</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="about-image"><img src="assets/aroadhigh.jpg" alt="Team working" loading="lazy"></div>
-      </div>
+    </header>
+
+    <!-- Page Header (unsplash background) -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1581094794325-c8119a89af2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>About GIS CO. LTD</h1>
+            <p>Integrating expertise for South Sudan’s development</p>
+        </div>
+    </section>
+
+    <!-- About Content: Our Story & Objective (two blocks) -->
+    <section class="about"> 
+        <div class="container">
+            <!-- First row: Our Story (founded, registration, location) -->
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p><strong>General Integrate Services Company Ltd (GIS CO. LTD)</strong> is a leading South Sudanese contracting and supply company, established to deliver high‑quality engineering, construction, trading, and technical services across the nation.</p>
+                    <p>Our head office is located at <strong>Northleaf Building, No. 28, next to Former KCB, Munuki Hai Kuwait, Bilpam Road, Juba, Central Equatoria State</strong>. Since our inception, we have specialized in civil and structural works, import/export, general supply, and turnkey construction solutions for commercial and residential projects.</p>
+                    <p>Our core strengths are built on integrity, quality, innovation, and professionalism. With the capacity to mobilize skilled manpower and modern equipment, we execute projects of any size and complexity — from site clearing to bridges, mining, and medical supply.</p>
+                </div>
+                <div class="about-image">
+                    <!-- unsplash: engineering/construction team -->
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="GIS engineering planning">
+                </div>
+            </div>
+         
+            <!-- Second row: Our Objective / Mission & Vision -->
+            <div class="about-content" style="margin-top: 4rem;">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Business strategy and vision">
+                </div>
+                <div class="about-text">
+                    <h2>Our Objective</h2>
+                    <p><strong>Our vision:</strong> To become a world‑class engineering and construction company providing efficient, affordable, sustainable, and cost‑effective services of the highest quality standards.</p>
+                    <p><strong>Our mission:</strong> To deliver reliable, innovative, and high‑quality engineering, construction, and supply solutions while maintaining strong customer relationships and contributing to the development of South Sudan.</p>
+                    <p>We place our customers at the heart of our business. By ensuring efficient, dependable services, we allow clients to focus on their core operations. Customer satisfaction remains our top priority — always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section (three core values from profile) -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Values</h2>
+                <p>The foundation of every project we undertake</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Integrity</h3>
+                        <p>We say what we mean, deliver what we promise, and always stand for what is right. Our word is our bond.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Excellence</h3>
+                        <p>Committed to continuous improvement through our “On Time – Within Budget” policy, maintaining the highest standards of quality, accountability, and respect.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Growth of the Whole Person</h3>
+                        <p>We invest in our staff through training, equal opportunity, and a motivating work environment where every team member can thrive and reach their full potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Expertise & Modern Equipment Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Strength: People & Machinery</h2>
+                <p>Skilled manpower and modern equipment for any challenge</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>GIS CO. LTD brings together experienced engineers, project managers, and technical specialists who have delivered complex infrastructure across South Sudan — from residential buildings to petrol stations, roads, and bridges.</p>
+                    <p>We own and operate a modern fleet of heavy machinery: excavators, bulldozers, graders, compactors, and concrete plants. This enables us to execute civil works of any size and complexity, even in challenging rural or hilly environments, without compromising quality or timelines.</p>
+                    <ul style="list-style: none; margin-top: 1.5rem;">
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Certified civil & structural engineers</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Heavy equipment operators & technicians</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> Project management professionals (PMP)</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 0.5rem;"></i> In‑house maintenance & logistics teams</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <!-- unsplash: heavy machinery / construction equipment -->
+                    <img src="https://images.unsplash.com/photo-1581094794325-c8119a89af2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern construction machinery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (ready to integrate) -->
+    <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,28,45,0.85);"></div>
+        <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto; text-align: center; color: white; padding: 3rem 1rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Let’s build something great together</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">We integrate all services — you benefit from a single trusted partner.</p>
+            <a href="contact.html" class="btn" style="background: var(--gold); color: var(--charcoal); padding: 1rem 3rem; font-weight: 600;">Contact us today</a>
+        </div>
+    </section>
+
+    <!-- Footer (GIS CO. LTD details) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GIS <span style="color: var(--gold);">CO. LTD</span></h3>
+                    <p>“We Integrate, You Benefit.” — Engineering, construction, trading and technical services across South Sudan.</p>
+                    <!-- no official social accounts provided, keep minimal -->
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Core Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#construction">General Construction</a></li>
+                        <li><a href="services.html#realestate">Real Estate</a></li>
+                        <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                        <li><a href="services.html#mining">Gold Mining</a></li>
+                        <li><a href="services.html#medical">Medical Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28, Next to Former KCB, Munuki Hai Kuwait, Bilpam Road, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 913 131 604  |  +211 927 769 604  |  +211 982 103 081</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@giscompanyltd.com">info@giscompanyltd.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00am - 5:00pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle (optional, kept) -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
     </div>
-  </section>
 
-  <!-- Vision & Mission -->
-  <section class="section-padding bg-beige">
-    <div class="container">
-      <div class="vision-mission">
-        <div class="vm-card"><i class="fas fa-eye"></i><h3>Vision</h3><p>To be the most trusted integrator of engineering & industrial services in East Africa.</p></div>
-        <div class="vm-card"><i class="fas fa-bullseye"></i><h3>Mission</h3><p>Deliver beyond expectations through innovation, integrity, and impeccable execution.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Strengths -->
-  <section class="section-padding">
-    <div class="container">
-      <h2>Our Core Strengths</h2>
-      <div class="core-values" style="grid-template-columns: repeat(4,1fr);">
-        <div class="value-card"><i class="fas fa-clock"></i><h4>Timely Delivery</h4></div>
-        <div class="value-card"><i class="fas fa-microscope"></i><h4>Technical Expertise</h4></div>
-        <div class="value-card"><i class="fas fa-leaf"></i><h4>Sustainable Practices</h4></div>
-        <div class="value-card"><i class="fas fa-hand-holding-heart"></i><h4>Community Focus</h4></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team Section (expertise, no names/images) -->
-  <section class="section-padding bg-beige">
-    <div class="container">
-      <h2>Our Team of Experts</h2>
-      <div class="core-values" style="grid-template-columns: repeat(3,1fr);">
-        <div class="value-card"><i class="fas fa-users"></i><h4>Senior Engineers</h4><p>Decades of experience in civil, mining, and industrial engineering.</p></div>
-        <div class="value-card"><i class="fas fa-helmet-safety"></i><h4>Safety Specialists</h4><p>Certified professionals ensuring world‑class HSE standards.</p></div>
-        <div class="value-card"><i class="fas fa-chart-line"></i><h4>Project Managers</h4><p>Proven track record in delivering complex projects on time.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Partner with Experts</h2>
-      <p>Let’s discuss your next project.</p>
-      <a href="contact.html" class="btn btn-gold">Get Started</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer>
-  <div class="footer-grid">
-    
-    <!-- Company Info -->
-    <div class="footer-col">
-      <h4>GIS CO. LTD</h4>
-      <p>General Integrate Services Company Ltd is committed to engineering excellence and delivering innovative, reliable, and sustainable solutions across South Sudan.</p>
-      <p><strong>"We Integrate, You Benefit."</strong></p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="services.html#general-construction">General Construction</a></li>
-        <li><a href="services.html#road-bridge">Road & Bridge Construction</a></li>
-        <li><a href="services.html#gold-mining">Gold Mining</a></li>
-        <li><a href="services.html#medical-equipment">Medical Equipment Supply</a></li>
-        <li><a href="services.html#solar-installation">Solar Installation</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-col">
-      <h4>Contact Information</h4>
-      <ul class="contact-info">
-        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28<br>
-            Hai Kuwait, Bilpam Road<br>
-            Juba, South Sudan</li>
-
-        <li><i class="fas fa-phone-alt"></i> +211 913 131 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 927 769 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 982 103 081</li>
-
-        <li><i class="fas fa-envelope"></i> 
-          <a href="mailto:giscompanyltd.com">info@giscompanyltd.com</a>
-        </li>
-      </ul>
-
-      <!-- Social Icons -->
-      <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom Copyright -->
-  <div class="copyright">
-    © 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved. | We Integrate, You Benefit.
-  </div>
-</footer>
-  
-<script src="script.js"></script>
+    <!-- original script (typing effect not used here but fine) -->
+    <script src="script.js"></script>
 </body>
 </html>
